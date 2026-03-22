@@ -1,0 +1,16 @@
+<changelist name="Uncommitted_changes_before_Update_at_22-Mar-26_14_23_[Changes]" date="1774164202279" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22-Mar-26_14_23_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 22-Mar-26 14:23 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="../LearnMVC/target/classes/com/example/Main.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../LearnMVC/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../LearnMVC/target/classes/com/example/Controller.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../LearnMVC/target/classes/com/example/Model.class" />
+  </binary>
+</changelist>
