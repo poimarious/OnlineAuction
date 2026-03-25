@@ -1,0 +1,160 @@
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.tree { font-family: var(--font-mono); font-size: 13px; line-height: 1.75; color: var(--color-text-primary); padding: 16px 20px; }
+.tree .root { font-size: 14px; font-weight: 500; color: var(--color-text-primary); }
+.dir { color: var(--color-text-info); font-weight: 500; cursor: pointer; user-select: none; }
+.dir:hover { opacity: 0.75; }
+.file { color: var(--color-text-secondary); }
+.file.java { color: var(--color-text-primary); }
+.file.xml  { color: var(--color-text-warning); }
+.file.fxml { color: var(--color-text-success); }
+.file.sql  { color: var(--color-text-danger); }
+.file.md   { color: var(--color-text-secondary); }
+.badge {
+  display: inline-block; font-size: 10px; font-family: var(--font-sans);
+  padding: 1px 6px; border-radius: 4px; margin-left: 8px;
+  vertical-align: middle; font-weight: 500; line-height: 1.6;
+}
+.b-pattern { background: var(--color-background-info); color: var(--color-text-info); }
+.b-mvc     { background: var(--color-background-success); color: var(--color-text-success); }
+.b-db      { background: var(--color-background-danger); color: var(--color-text-danger); }
+.b-test    { background: var(--color-background-warning); color: var(--color-text-warning); }
+.b-config  { background: var(--color-background-secondary); color: var(--color-text-secondary); }
+.indent1  { padding-left: 20px; }
+.indent2  { padding-left: 40px; }
+.indent3  { padding-left: 60px; }
+.indent4  { padding-left: 80px; }
+.indent5  { padding-left: 100px; }
+.section-label {
+  font-family: var(--font-sans); font-size: 11px; font-weight: 500;
+  color: var(--color-text-tertiary); text-transform: uppercase;
+  letter-spacing: 0.06em; margin: 14px 0 2px;
+  border-top: 1px solid var(--color-border-tertiary); padding-top: 10px;
+}
+</style>
+<div class="tree">
+
+<div class="section-label">root</div>
+<div class="root">auction-system/</div>
+<div class="indent1"><span class="dir">client/</span><span class="badge b-mvc">JavaFX · MVC</span></div>
+<div class="indent2"><span class="file xml">pom.xml</span></div>
+<div class="indent2"><span class="dir">src/main/java/com/auction/client/</span></div>
+
+<div class="section-label">client — model</div>
+<div class="indent3"><span class="dir">model/</span><span class="badge b-mvc">M</span></div>
+<div class="indent4"><span class="file java">Auction.java</span></div>
+<div class="indent4"><span class="file java">BidTransaction.java</span></div>
+<div class="indent4"><span class="file java">User.java</span></div>
+<div class="indent4"><span class="file java">Item.java</span></div>
+<div class="indent4"><span class="dir">enums/</span></div>
+<div class="indent5"><span class="file java">AuctionStatus.java</span></div>
+<div class="indent5"><span class="file java">Role.java</span></div>
+<div class="indent5"><span class="file java">BidStatus.java</span></div>
+
+<div class="section-label">client — controller</div>
+<div class="indent3"><span class="dir">controller/</span><span class="badge b-mvc">C</span></div>
+<div class="indent4"><span class="file java">AuthController.java</span></div>
+<div class="indent4"><span class="file java">AuctionListController.java</span></div>
+<div class="indent4"><span class="file java">BiddingController.java</span></div>
+<div class="indent4"><span class="file java">ItemManageController.java</span></div>
+<div class="indent4"><span class="file java">AdminDashboardController.java</span></div>
+
+<div class="section-label">client — view (fxml)</div>
+<div class="indent3"><span class="dir">view/</span><span class="badge b-mvc">V</span></div>
+<div class="indent4"><span class="file fxml">login.fxml</span></div>
+<div class="indent4"><span class="file fxml">register.fxml</span></div>
+<div class="indent4"><span class="file fxml">auction-list.fxml</span></div>
+<div class="indent4"><span class="file fxml">bidding.fxml</span></div>
+<div class="indent4"><span class="file fxml">item-manage.fxml</span></div>
+<div class="indent4"><span class="file fxml">admin-dashboard.fxml</span></div>
+
+<div class="section-label">client — network &amp; observer</div>
+<div class="indent3"><span class="dir">network/</span></div>
+<div class="indent4"><span class="file java">ApiService.java</span></div>
+<div class="indent4"><span class="file java">SocketClient.java</span></div>
+<div class="indent3"><span class="dir">observer/</span><span class="badge b-pattern">Observer</span></div>
+<div class="indent4"><span class="file java">AuctionObserver.java</span></div>
+<div class="indent4"><span class="file java">ClientSocketObserver.java</span></div>
+<div class="indent4"><span class="file java">PriceChartObserver.java</span></div>
+
+<div class="section-label">server</div>
+<div class="indent1"><span class="dir">server/</span><span class="badge b-mvc">Java · MVC</span></div>
+<div class="indent2"><span class="file xml">pom.xml</span></div>
+<div class="indent2"><span class="dir">src/main/java/com/auction/server/</span></div>
+
+<div class="section-label">server — model / entity</div>
+<div class="indent3"><span class="dir">model/</span><span class="badge b-mvc">M</span></div>
+<div class="indent4"><span class="dir">entity/</span></div>
+<div class="indent5"><span class="file java">Entity.java</span><span class="badge b-pattern">Abstract</span></div>
+<div class="indent5"><span class="file java">User.java</span></div>
+<div class="indent5"><span class="file java">Bidder.java</span></div>
+<div class="indent5"><span class="file java">Seller.java</span></div>
+<div class="indent5"><span class="file java">Admin.java</span></div>
+<div class="indent4"><span class="dir">item/</span></div>
+<div class="indent5"><span class="file java">Item.java</span><span class="badge b-pattern">Abstract</span></div>
+<div class="indent5"><span class="file java">Electronics.java</span></div>
+<div class="indent5"><span class="file java">Art.java</span></div>
+<div class="indent5"><span class="file java">Vehicle.java</span></div>
+<div class="indent4"><span class="dir">auction/</span></div>
+<div class="indent5"><span class="file java">Auction.java</span></div>
+<div class="indent5"><span class="file java">BidTransaction.java</span></div>
+<div class="indent5"><span class="file java">AutoBidConfig.java</span></div>
+<div class="indent5"><span class="file java">BidEvent.java</span></div>
+
+<div class="section-label">server — service (business logic)</div>
+<div class="indent3"><span class="dir">service/</span></div>
+<div class="indent4"><span class="file java">BidService.java</span><span class="badge b-pattern">Strategy · Lock</span></div>
+<div class="indent4"><span class="file java">AuctionService.java</span></div>
+<div class="indent4"><span class="file java">UserService.java</span></div>
+<div class="indent4"><span class="file java">AutoBidEngine.java</span><span class="badge b-pattern">PriorityQueue</span></div>
+<div class="indent4"><span class="file java">AuctionTimer.java</span><span class="badge b-pattern">Anti-snipe</span></div>
+<div class="indent4"><span class="file java">NotifyService.java</span><span class="badge b-pattern">Observer</span></div>
+<div class="indent3"><span class="dir">factory/</span><span class="badge b-pattern">Factory Method</span></div>
+<div class="indent4"><span class="file java">ItemCreator.java</span></div>
+<div class="indent4"><span class="file java">ElectronicsCreator.java</span></div>
+<div class="indent4"><span class="file java">ArtCreator.java</span></div>
+<div class="indent4"><span class="file java">VehicleCreator.java</span></div>
+<div class="indent3"><span class="dir">strategy/</span><span class="badge b-pattern">Strategy</span></div>
+<div class="indent4"><span class="file java">BidStrategy.java</span></div>
+<div class="indent4"><span class="file java">NormalBidStrategy.java</span></div>
+<div class="indent4"><span class="file java">AutoBidStrategy.java</span></div>
+<div class="indent3"><span class="dir">observer/</span><span class="badge b-pattern">Observer</span></div>
+<div class="indent4"><span class="file java">AuctionObserver.java</span></div>
+<div class="indent4"><span class="file java">EmailNotifyObserver.java</span></div>
+<div class="indent4"><span class="file java">LogObserver.java</span></div>
+
+<div class="section-label">server — controller (rest endpoints)</div>
+<div class="indent3"><span class="dir">controller/</span><span class="badge b-mvc">C</span></div>
+<div class="indent4"><span class="file java">UserController.java</span></div>
+<div class="indent4"><span class="file java">AuctionController.java</span></div>
+<div class="indent4"><span class="file java">BidController.java</span></div>
+<div class="indent4"><span class="file java">ItemController.java</span></div>
+
+<div class="section-label">server — dao &amp; database</div>
+<div class="indent3"><span class="dir">dao/</span><span class="badge b-db">MySQL</span></div>
+<div class="indent4"><span class="file java">UserDAO.java</span></div>
+<div class="indent4"><span class="file java">AuctionDAO.java</span></div>
+<div class="indent4"><span class="file java">BidDAO.java</span></div>
+<div class="indent4"><span class="file java">ItemDAO.java</span></div>
+<div class="indent3"><span class="dir">config/</span></div>
+<div class="indent4"><span class="file java">DatabaseConfig.java</span><span class="badge b-pattern">Singleton</span></div>
+<div class="indent4"><span class="file java">AuctionManager.java</span><span class="badge b-pattern">Singleton</span></div>
+<div class="indent4"><span class="file java">SocketServer.java</span></div>
+<div class="indent2"><span class="dir">src/main/resources/</span></div>
+<div class="indent3"><span class="file sql">schema.sql</span></div>
+<div class="indent3"><span class="file xml">application.properties</span></div>
+
+<div class="section-label">tests</div>
+<div class="indent3"><span class="dir">src/test/java/</span><span class="badge b-test">JUnit</span></div>
+<div class="indent4"><span class="file java">BidServiceTest.java</span></div>
+<div class="indent4"><span class="file java">AuctionTimerTest.java</span></div>
+<div class="indent4"><span class="file java">AutoBidEngineTest.java</span></div>
+<div class="indent4"><span class="file java">ConcurrentBidTest.java</span></div>
+
+<div class="section-label">ci/cd &amp; docs</div>
+<div class="indent1"><span class="dir">.github/workflows/</span><span class="badge b-config">CI/CD</span></div>
+<div class="indent2"><span class="file xml">ci.yml</span></div>
+<div class="indent1"><span class="file md">README.md</span></div>
+
+</div>
