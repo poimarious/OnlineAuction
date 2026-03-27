@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52106c90-830e-41f7-8aa6-08cc99c0170f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/2026-Bài tập lớn.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/BTL.drawio" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project_structure_tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/sprint1_tickets.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/auction/client/model/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/auction/client/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/auction/client/model/enums/AuctionStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/auction/client/model/enums/BidStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/auction/client/model/enums/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22-Mar-26_14_23_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22-Mar-26_14_23__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +76,9 @@
       <workItem from="1774438868146" duration="3966000" />
       <workItem from="1774445435163" duration="111000" />
       <workItem from="1774445802389" duration="117000" />
+      <workItem from="1774445963292" duration="171000" />
+      <workItem from="1774449895437" duration="101000" />
+      <workItem from="1774487826393" duration="12000" />
     </task>
     <servers />
   </component>
